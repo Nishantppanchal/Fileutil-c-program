@@ -1,0 +1,1 @@
+void parse_args(int argc, char *argv[], int *infile, int *out_dest, int *max_num_words);

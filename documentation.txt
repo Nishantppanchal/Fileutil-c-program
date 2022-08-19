@@ -1,0 +1,38 @@
+NAME
+
+    fileutil
+
+HOW TO RUN
+
+    Run the command:
+        ./fileutil [SOURCEFILE] [ARGUMENTS]
+    Note: both SOURCEFILE and ARGUMENTS are optional
+
+DESCRIPTION
+
+    fileutil lets you copy or output the first n words from the source file to the out destination.
+    If there are less than n words, all the words are simply appended or outputted.
+
+    ARGUMENTS
+
+        sourcefile
+            Allows the user to input a path for the sourcefile to display/copy.
+            sourcefile must appear immediately after the command (e.g., ./fileutil sourcefile).
+            Optional argument. Default sourcefile: "simple.txt".
+    
+        -a destfile
+            Allows the user to input a path for the destination file for appending the source file.
+            destfile must appear immediately after -a.
+            Optional argument. Default out destination: standard output (usually the terminal screen).
+
+        -n numwords
+            Allows the user to input a number to specify how many words of text should be displayed/appended.
+            numwords must appear immediately after -n.
+            Optional argument. Default numwords: 10 words.
+
+HOW TO COMPILE THE PROGRAM
+
+1.  Navigate the folder with all the program files
+2.  Run the command:
+        make
+3. Program has been compiled

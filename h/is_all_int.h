@@ -1,0 +1,1 @@
+int is_all_int(char *str);

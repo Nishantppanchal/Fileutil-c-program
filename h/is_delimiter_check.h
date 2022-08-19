@@ -1,0 +1,1 @@
+int is_delimiter_check(char current_char);
