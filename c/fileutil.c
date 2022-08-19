@@ -8,12 +8,15 @@
 int main(int argc, char *argv[])
 {
     // Declare variables
-    int infile, out_dest, max_num_words, i, num_words;
+    int infile, out_dest, max_num_words, i, num_words, file_len;
     char buffer[1024];
     Is_delimiter is_delimiter;
     char current_char, next_char;
 
     parse_args(argc, argv, &infile, &out_dest, &max_num_words);
+
+    file_len = lseek(infile, 0, SEEK_END);
+    lseek(infile, 0, SEEK_SET);
 
     read(infile, &buffer, sizeof(char) * 1024);
 
@@ -21,7 +24,7 @@ int main(int argc, char *argv[])
     // Determines whether the first character is a delimiter and sets is_delimiter.current_char to that
     is_delimiter.current_char = is_delimiter_check(buffer[0]);
     num_words = 0; // Sets the inital number of words to 0
-    for (i = 0; num_words < max_num_words && next_char != '\0'; i++)
+    for (i = 0; num_words < max_num_words && i < file_len; i++)
     {
         current_char = buffer[i];
         next_char = buffer[i + 1];
