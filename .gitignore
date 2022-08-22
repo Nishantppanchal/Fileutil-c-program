@@ -53,3 +53,6 @@ dkms.conf
 
 # Program
 fileutil
+
+# vscode
+.vscode
