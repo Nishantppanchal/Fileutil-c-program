@@ -1,1 +1,1 @@
-void print(char *str, int exit_program, int newline);
+void print(char *str, int out_des, int exit_program, int newline);

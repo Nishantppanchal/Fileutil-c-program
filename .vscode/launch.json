@@ -9,7 +9,11 @@
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/fileutil",
-      "args": ["/mnt/c/Users/Nisha/OneDrive/Documents/Uni/Year 1/FIT2100 - Operating Systems/Assignment 1/sourcefile.txt", "-n", "6"],
+      "args": [
+        "/mnt/c/Users/Nisha/OneDrive/Documents/Uni/Year 1/FIT2100 - Operating Systems/Assignment 1/sourcefile.txt",
+        "-n",
+        "6"
+      ],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "environment": [],
