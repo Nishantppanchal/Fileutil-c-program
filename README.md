@@ -1,2 +1,2 @@
-# FIleutil C program
- This is Assignment 1 for FIT2100
+# Fileutil C program
+ A program to edit files from code line using C.
