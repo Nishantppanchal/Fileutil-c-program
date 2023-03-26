@@ -1,2 +1,2 @@
 # Fileutil C program
- A program to edit files from code line using C.
+ A program to edit files from command line using C.
